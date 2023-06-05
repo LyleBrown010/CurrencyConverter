@@ -8,7 +8,34 @@
     <title>Currency Converter</title>
 </head>
 <body>
-    
+    <div class="container">
+        <strong>Current Currency</strong>
+        <input id="currentCurrency" type="number" placeholder="Enter your currency amount">
+        <!-- <input id="currencyName" type="text" placeholder="Rand to Euro? Rand to Dollar? Rand to Pound?
+        Euro to Rand? Euro to Dollar? Euro to Pound? 
+        Dollar to Rand? Dollar to Euro ? Dollar to Pound? 
+        Pound to Rand? Pound to Dollar? Pound to Euro? 
+        "> -->
+
+        <select name="Select-form" id="select-form">
+            <option value="ZARtoEUR"><button onclick="randToEuro()">Rand To Euro</button></option>
+            <option value="ZARtoUSD"><button onclick="randToDollar(rand)">Rand To Dollar</button></option>
+            <option value="ZARtoGBP"><button onclick="randToPound(rand)">Rand To Pound</button></option>
+            <option value="EURtoZAR"><button onclick="euroToRand(euro)">Euro to Rand</button></option>
+            <option value="EURtoUSD"><button onclick="euroToDollar(euro)">Euro to Dollar</button></option>
+            <option value="EURtoGBP"><button onclick="euroToPound(euro)">Euro to Pound</button></option>
+            <option value="USDtoZAR"><button onclick="dollarToRand(dollar)">Dollar to Rand</button></option>
+            <option value="USDtoEUR"><button onclick="dollarToEuro(dollar)">Dollar to Euro</button></option>
+            <option value="USDtoGBP"><button onclick="dollarToPound(dollar)">Dollar to Pound</button></option>
+            <option value="GBPtoZAR"><button onclick="poundToRand(pound)">Pound to Rand</button></option>
+            <option value="GBPtoEUR"><button onclick="poundToEuro(pound)">Pound to Euro</button></option>
+            <option value="GBPtoUSD"><button onclick="poundToDollar(pound)">Pound to Dollar</button></option>
+            
+            
+        </select>
+
+        <input id="display" type="text">
+    </div>
 
     <script src="index.js"></script>
 </body>
