@@ -1,4 +1,4 @@
-// provides product authorization 
+// provides product authorization. variable so that you can add it dynamically 
 const apiKey = "eb1f2e34bdd6dae4dbe084c1";
 
 // fetch currency options
@@ -14,6 +14,7 @@ fetch(`https://v6.exchangerate-api.com/v6/${apiKey}/codes`)
     const selectElements = document.querySelectorAll("select");
 
     supported_codes.forEach((code) => {
+//  creates option element within select
     const optionElement = document.createElement("option");
     optionElement.value = code;
     optionElement.text = code;
